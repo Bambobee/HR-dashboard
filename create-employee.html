@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" href="./assets/css/skin/color-3.css">
+
+    <!--========= Style switcher========= -->
+    <link rel="stylesheet" href="./assets/css/skin/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="./assets/css/skin/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="./assets/css/skin/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="./assets/css/skin/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="./assets/css/skin/color-5.css" class="alternate-style" title="color-5" disabled>
+</head>
+
+<body>
+
+    <!-- html for sidedar start here -->
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxl-ok-ru'></i>
+            <span class="logo_name">HR<span style="color: var(--skin-color);">MS</span></span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li class="no-list"><a href="#" class="link_name">Dashboard</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="bx bx-user icon"></i>
+                    <span class="link_name">Employee</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li class="no-list"><a href="#" class="link_name">Employee</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-spreadsheet'></i>
+                    <span class="link_name">Payroll</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li class="no-list"><a href="#" class="link_name">Payroll</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bxs-report'></i>
+                        <span class="link_name">Report</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li class="no-list"><a href="#" class="link_name">Report</a></li>
+                    <li><a href="#">Monthly Attendance</a></li>
+                    <li><a href="#">Leave</a></li>
+                    <li><a href="#">Payroll</a></li>
+                    <li><a href="#">Timesheet</a></li>
+
+                </ul>
+            </li>
+
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-timer' ></i>
+                        <span class="link_name">Timesheet</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li class="no-list"><a href="#" class="link_name">Timesheet</a></li>
+                    <li><a href="#">Manage Leave</a></li>
+                    <li><a href="#">Attendance</a></li>
+
+                </ul>
+            </li>
+
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-check-square' ></i>
+                        <span class="link_name">Approval</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li class="no-list"><a href="#" class="link_name">Approval</a></li>
+                    <li><a href="#">Answer grievance</a></li>
+                    <li><a href="#">Loan Approval</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-briefcase'></i>
+                    <span class="link_name">Jobs</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li class="no-list"><a href="#" class="link_name">Jobs</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-walk'></i>
+                        <span class="link_name">Shift</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li class="no-list"><a href="#" class="link_name">Shift</a></li>
+                    <li><a href="#">Add shift</a></li>
+                    <li><a href="#">shift Employee</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-message-dots' ></i>
+                    <span class="link_name">Message</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li class="no-list"><a href="#" class="link_name">Message</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-user-x'></i>
+                    <span class="link_name">Disciplinary</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li class="no-list"><a href="#" class="link_name">Disciplinary</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog' ></i>
+                    <span class="link_name">HR system setup</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li class="no-list"><a href="#" class="link_name">HR system setup</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+    <!-- html for sidedar ends here -->
+    <section class="content">
+
+
+        <!-- html for nanbar start here -->
+        <nav>
+            <div class="two">
+                <i class="bx bx-menu"></i>
+                <input class="search" type="search" placeholder="Type to search"><i class='bx bx-search-alt-2'></i>
+            </div>
+            <div class="sec">
+                <div class="theme-toggler">
+                    <!-- <span class="material-icons-sharp active">light_mode</span> -->
+                    <span class="active"><i class="bx bx-sun"></i></span>
+                    <!-- <span class="material-icons-sharp">dark_mode</span> -->
+                    <span><i class="bx bx-moon"></i></span>
+                </div>
+                <div class="manage">
+                    <div class="notifications">
+                        <div class="icon_wrap">
+                            <a href="#">
+                                <span><i class='bx bx-bell bx-tada'></i></span>
+                                <span class="badge">5</span>
+                            </a>
+                        </div>
+                        <div class="notification_dd">
+                            <ul class="notification_ul">
+                                <li class="starbucks success">
+                                    <div class="notify_icon">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="notify_data">
+                                        <div class="title">
+                                            Lorem, ipsum dolor.
+                                        </div>
+                                        <div class="sub_title">
+                                            Lorem ipsum dolor sit amet consectetur.
+                                        </div>
+                                    </div>
+                                    <div class="notify_status">
+                                        <p>11:05am</p>
+                                    </div>
+                                </li>
+                                <li class="baskin_robbins failed">
+                                    <div class="notify_icon">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="notify_data">
+                                        <div class="title">
+                                            Lorem, ipsum dolor.
+                                        </div>
+                                        <div class="sub_title">
+                                            Lorem ipsum dolor sit amet consectetur.
+                                        </div>
+                                    </div>
+                                    <div class="notify_status">
+                                        <p>08:00am</p>
+                                    </div>
+                                </li>
+                                <li class="mcd success">
+                                    <div class="notify_icon">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="notify_data">
+                                        <div class="title">
+                                            Lorem, ipsum dolor.
+                                        </div>
+                                        <div class="sub_title">
+                                            Lorem ipsum dolor sit amet consectetur.
+                                        </div>
+                                    </div>
+                                    <div class="notify_status">
+                                        <p>9/4/2023</p>
+                                    </div>
+                                </li>
+                                <li class="pizzahut failed">
+                                    <div class="notify_icon">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="notify_data">
+                                        <div class="title">
+                                            Lorem, ipsum dolor.
+                                        </div>
+                                        <div class="sub_title">
+                                            Lorem ipsum dolor sit amet consectetur.
+                                        </div>
+                                    </div>
+                                    <div class="notify_status">
+                                        <p>9/4/2023</p>
+                                    </div>
+                                </li>
+                                <li class="kfc success">
+                                    <div class="notify_icon">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="notify_data">
+                                        <div class="title">
+                                            Lorem, ipsum dolor.
+                                        </div>
+                                        <div class="sub_title">
+                                            Lorem ipsum dolor sit amet consectetur.
+                                        </div>
+                                    </div>
+                                    <div class="notify_status">
+                                        <p>9/4/2023</p>
+                                    </div>
+                                </li>
+                                <li class="show_all">
+                                    <p class="link">Show All Activities</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <div class="message">
+                        <div class="icon_wrap">
+                            <a href="#">
+                                <span><i class='bx bx-envelope bx-tada'></i></span>
+                                <span class="badge">2</span>
+                            </a>
+                        </div>
+                        <div class="message_dd">
+                            <ul class="message_ul">
+                                <li class="starbucks success">
+                                    <div class="notify_icon">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="notify_data">
+                                        <div class="title">
+                                            ssewankamboderick@gmail.com
+                                        </div>
+                                        <div class="sub_title">
+                                            Lorem ipsum dolor sit amet consectetur.
+                                        </div>
+                                    </div>
+                                    <div class="notify_status">
+                                        <p>11:05am</p>
+                                    </div>
+                                </li>
+                                <li class="baskin_robbins failed">
+                                    <div class="notify_icon">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="notify_data">
+                                        <div class="title">
+                                            ssewankamboderick@gmail.com
+                                        </div>
+                                        <div class="sub_title">
+                                            Lorem ipsum dolor sit amet consectetur.
+                                        </div>
+                                    </div>
+                                    <div class="notify_status">
+                                        <p>08:00am</p>
+                                    </div>
+                                </li>
+                                <li class="mcd success">
+                                    <div class="notify_icon">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="notify_data">
+                                        <div class="title">
+                                            rickrambo78@gmail.com
+                                        </div>
+                                        <div class="sub_title">
+                                            Lorem ipsum dolor sit amet consectetur.
+                                        </div>
+                                    </div>
+                                    <div class="notify_status">
+                                        <p>9/4/2023</p>
+                                    </div>
+                                </li>
+                                <li class="pizzahut failed">
+                                    <div class="notify_icon">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="notify_data">
+                                        <div class="title">
+                                            ssewankamboderick@gmail.com
+                                        </div>
+                                        <div class="sub_title">
+                                            Lorem ipsum dolor sit amet consectetur.
+                                        </div>
+                                    </div>
+                                    <div class="notify_status">
+                                        <p>9/4/2023</p>
+                                    </div>
+                                </li>
+                                <li class="kfc success">
+                                    <div class="notify_icon">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="notify_data">
+                                        <div class="title">
+                                            kikajjosda@gmail.com
+                                        </div>
+                                        <div class="sub_title">
+                                            Lorem ipsum dolor sit amet consectetur.
+                                        </div>
+                                    </div>
+                                    <div class="notify_status">
+                                        <p>9/4/2023</p>
+                                    </div>
+                                </li>
+                                <li class="show_all">
+                                    <p class="link">Show All Activities</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="style-switcher-toggler s-icon"><i class='bx bx-cog bx-spin'></i></span>
+                    </div>
+                    <div class="style-switcher">
+                        <h4>Theme colors</h4>
+                        <div class="colors">
+                            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Ssewankambo Derick</b></p>
+                        <small class="text-muted1">Admin</small>
+                    </div>
+                    <div class="profile-photo icon_wrap" style="cursor: pointer;">
+                        <img src="./assets/img/face girl.jpg" alt="">
+                    </div>
+
+                    <div class="profile_dd">
+                        <ul class="profile_ul">
+                            <li><a class="logout" href="#"><span class="picon"><i class='bx bxs-user'></i></span>
+                                    &nbsp;Profile</a></li>
+                            <li><a class="logout" href="#"><span class="picon"><i
+                                            class='bx bx-log-out'></i></span>&nbsp;Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- html for nanbar ends here -->
+        <!-- html for main part starts here -->
+        <main>
+            <div class="container">
+                <h1 class="title">Manage Employee</h1>
+                <ul class=" emp" style="line-height: none;">
+                    <li><a href="#">Home</a></li>
+                    <li class="divider">/</li>
+                    <li><a href="#" class="active">Employee</a></li>
+                    <li class="divider">/</li>
+                    <li><a href="#" class="active">Create Employee</a></li>
+            
+                </ul>
+                <div class="hr"></div>
+
+                <div class="create-employee mt-3">
+                    <div class="personal-details">
+                        <div class="heading">
+                            <div class="color-top"></div>
+                            <div class="begin">
+                                <h2>Personal Details</h2>
+                            </div>
+                        </div>
+                        <hr>
+                        <form action="#">
+                            <div class="row g-3">
+                                <div class="col">
+                                    <label for="Name">Name<span>*</span></label>
+                                    <input type="text" class="form-control form-control-sm"
+                                        placeholder="Enter employee name">
+                                </div>
+                                <div class="col">
+                                    <label for="Contact">Contact<span>*</span></label>
+                                    <input type="text" class="form-control form-control-sm"
+                                        placeholder="Enter employee contact">
+                                </div>
+                            </div>
+                            <div class="row g-3 mt-1">
+                                <div class="col">
+                                    <label for="Date of Birth">Date of Birth<span>*</span></label>
+                                    <input type="date" class="form-control form-control-sm">
+                                </div>
+                                <div class="col">
+                                    <label for="Contact">Gender<span>*</span></label>
+                                    <br>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Male</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="inlineCheckbox2"
+                                            value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Female</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mt-1">
+                                <div class="col">
+                                    <label for="Email">Email<span>*</span></label>
+                                    <input type="text" class="form-control form-control-sm"
+                                        placeholder="Enter employee email">
+                                </div>
+                                <div class="col">
+                                    <label for="Password">Password<span>*</span></label>
+                                    <input type="password" class="form-control form-control-sm"
+                                        placeholder="Enter employee new Password">
+                                </div>
+                            </div>
+
+                            <div class="mt-3">
+                                <label class="form-label" for="Upload">Upload Employee image<span>*</span></label>
+                                <input type="file" class="form-control form-control-sm" id="inputGroupFile01">
+                            </div>
+
+                            <div class="mb-3 mt-3">
+                                <label for="Address">Address</label>
+                                <textarea class="form-control form-control-sm" placeholder="Enter Employee Address"
+                                    rows="2"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="personal-details">
+                        <div class="heading">
+                            <div class="color-top"></div>
+                            <div class="begin">
+                                <h2>Bank Details</h2>
+                            </div>
+                        </div>
+                        <hr>
+                        <form action="#">
+                            <div class="row g-3 ">
+                                <div class="col">
+                                    <label>Account Holder Name<span>*</span></label>
+                                    <input type="text" class="form-control" placeholder="Enter Account Holder Name">
+                                </div>
+                                <div class="col">
+                                    <label>Account Number<span>*</span></label>
+                                    <input type="text" class="form-control" placeholder="Enter Account Number">
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mt-1">
+                                <div class="col">
+                                    <label>Bank Name<span>*</span></label>
+                                    <input type="text" class="form-control" placeholder="Enter Bank Name">
+                                </div>
+                                <div class="col">
+                                    <label>Bank Identifier Code<span>*</span></label>
+                                    <input type="text" class="form-control" placeholder="Enter Bank Identifier code">
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mt-1 mb-5">
+                                <div class="col">
+                                    <label>Branch Location<span>*</span></label>
+                                    <input type="text" class="form-control" placeholder="Enter Branch Location">
+                                </div>
+                                <div class="col">
+                                    <label>Tax Payer Id<span>*</span></label>
+                                    <input type="text" class="form-control" placeholder="Enter Tax Payer id">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+                <div class="campany-details">
+                <div class="personal-details">
+                    <div class="heading">
+                        <div class="color-top"></div>
+                        <div class="begin">
+                            <h2>Campany Details</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <form action="#">
+                        
+                        <div class="row g-3 mb-3">
+                            <div class="col">
+                                <label for="branch">Select Branch<span>*</span></label>
+                                <select class=" form-select form-select-sm" aria-label="Default select example">
+                                    <option selected>Select Branch</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="Department">Select Department<span>*</span></label>
+                                <select class="form-select form-select-sm" aria-label="Default select example">
+                                    <option selected>Select Department</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row g-3 mb-3">
+                            <div class="col">
+                                <label for="branch">Select Designation<span>*</span></label>
+                                <select class=" form-select form-select-sm" aria-label="Default select example">
+                                    <option selected>Select Designation</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="Department">Select Contract type<span>*</span></label>
+                                <select class="form-select form-select-sm" aria-label="Default select example">
+                                    <option selected>Select Contract type</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row g-3 mb-3">
+                            <div class="col">
+                                <label for="branch">Select Payment type<span>*</span></label>
+                                <select class=" form-select form-select-sm" aria-label="Default select example">
+                                    <option selected>Select Payment type</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="Department">Select Job type<span>*</span></label>
+                                <select class="form-select form-select-sm" aria-label="Default select example">
+                                    <option selected>Select Job type</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col">
+                                <label for="branch">Select Permissions<span>*</span></label>
+                                <select class=" form-select form-select-sm" aria-label="Default select example">
+                                    <option selected>Select Permissions</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col">
+                                <label for="joining-date" >Campany date of Joining</label>
+                                <input class="form-control form-control-sm" type="date">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+                <div class="submit" style="margin-left: 22px;">
+            <a href="#" class="btn btn-sm" style="background: var(--skin-color); color: #fff">Create</a>
+                </div>
+
+            </div>
+        </main>
+        <!-- html for main part ends here -->
+
+    </section>
+    <!--Html for the footer-->
+    <footer class="footer">
+        <!-- <div class="hr"></div> -->
+        <div class="last">
+            <p>&copy;copyright all rights reserved by Ssewankambo Derick</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/sidebar.js"></script>
+    <script src="./assets/js/theme-color.js"></script>
+    <script src="./assets/js/notification.js"></script>
+    <script src="./assets/js/color-picker.js"></script>
+</body>
+
+</html>
