@@ -1030,3 +1030,83 @@ hr{
 .setup .list ul .active-list i{
     color: #fff;
 }
+
+/* Employee details*/
+.mother-profile{
+    height: 390px;
+}
+.profile-head{
+    display: flex;
+    justify-content: center;
+}
+.profile-head h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.employee-image{
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 80%;
+    margin: 0 auto;
+    height: 280px;
+}
+.employee-image img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.details-table{
+    max-height: 390px;
+    overflow-y: auto;
+}
+.details-table::-webkit-scrollbar{
+    display: none;
+}
+.table_details{
+    border: 1px solid var(--color-light);
+}
+
+.table_details tbody tr{
+    text-align: left !important;
+    height: 3rem !important;
+}
+.table_details tbody tr:nth-child(even){
+    background-color: var(--bg-color);
+}
+.table_details tbody tr td{
+    border-left: 1px solid var(--color-light);
+    font-size: 15px;
+}
+.table_details tbody tr .begin{
+    width: 30%;
+}
+.table_details tbody tr .end{
+    padding: 1%;
+}
+.small-table{
+    width: 90%;
+    margin: 0 auto;
+}
+.top-form{
+    width: 90%;
+    margin: 0 auto;
+    /* padding: 2; */
+}
+.plus{
+    width: 40px;
+     height: 30px;
+      border: 1px solid #ced4da;
+       display: flex; 
+    justify-content: center; 
+    position: relative; 
+    top: 24px;
+    padding: 2px;
+}
+.form-name::placeholder{
+    font-size: 13px;
+}
+.modal-bg{
+    background-color: var(--white);
+}

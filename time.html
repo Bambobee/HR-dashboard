@@ -412,112 +412,83 @@
         <!-- html for main part starts here -->
         <main>
             <div class="container">
-                <h1 class="title">Manage Branch</h1>
+                <h1 class="title">Manage Payroll</h1>
                 <ul class=" emp" style="line-height: none;">
                     <li><a href="#">Home</a></li>
                     <li class="divider">/</li>
-                    <li><a href="#" class="active">Branch</a></li>
-                    <li><button type="button" class="btn btn-sm" style="background: var(--skin-color); color: #fff" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Add Branch
-                      </button></li>
+                    <li><a href="#" class="active">Daily Attendance</a></li>
                 </ul> 
                 <div class="hr"></div>
 
-               <div class="setup">
-                <div class="list mt-3">
-                    <ul>
-                        <li class="active-list">
-                            <a  href="#">Branch Manager</a>
-                            <i class='bx bxs-chevron-right arrow'></i>
-                        </li>
-                        <li><a href="#">Department</a>
-                        <i class='bx bxs-chevron-right arrow'></i></li>
-                        <li><a href="#">Designation</a>
-                        <i class='bx bxs-chevron-right arrow'></i></li>
-                        <li><a href="#">Leave Type</a>
-                        <i class='bx bxs-chevron-right arrow'></i></li>
-                        <li><a href="#">Payslip Type</a>
-                        <i class='bx bxs-chevron-right arrow'></i></li>
-                        <li><a href="#">Allowance type</a>
-                        <i class='bx bxs-chevron-right arrow'></i></li>
-                        <li><a href="#">Loan options</a>
-                        <i class='bx bxs-chevron-right arrow'></i></li>
-                        <li><a href="#">Shift type</a>
-                        <i class='bx bxs-chevron-right arrow'></i></li>
-                        <li><a href="#">Deduction option</a>
-                        <i class='bx bxs-chevron-right arrow'></i></li>
-                        <li><a href="#">Payment Type</a>
-                        <i class='bx bxs-chevron-right arrow'></i></li>
-                        <li><a href="#">Contract Type</a>
-                        <i class='bx bxs-chevron-right arrow'></i></li>
-                        <li><a href="#">Permissions</a>
-                        <i class='bx bxs-chevron-right arrow'></i></li>
-                        <li><a href="#">Job Type</a>
-                        <i class='bx bxs-chevron-right arrow'></i></li>
-                    </ul>
-                </div>
-                <div>
-                    <div class="event-table mt-3">                    
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>S.N</th>
-                                    <th>Branch</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Main Branch</td>
-                                    <td>
-    
-                                        <div class="dropdown">
-                                            <a class="btn btn-light hidden-arrow dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <i class="bx bx-dots-vertical" style="color: var(--skin-color);"></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a href="#" class=" dropdown-item update btn-sm btn"><i class="bx bx-edit"></i> Edit</a>
-                                                </li>
-                                                <li>
-                                                    <button type="submit" class="dropdown-item btn-sm btn delete">
-                                                        <i class="bx bx-trash"></i>
-                                                        Delete
-                                                    </button>
-                                                </li>
-                                              
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                <div class="modal-content modal-bg">
-                    <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Add Branch</h1>
-                    <button type="button" class="btn-close" style="color: var(--text-color);" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="mb-2" style="width: 80%; margin: 0 auto;">
-                            <label class="form-label">Branch Name</label>
-                            <input type="text" class="form-control form-name"  placeholder="Enter Branch Name Here...">
+                <div class="top-form mb-4">
+                    <form action="#">
+                      <div class="row g-3 mt-1">
+                        <div class="col-md-4">
+                            <label>Employee by Department</label>
+                            <select class=" form-select form-select-sm" aria-label="Default select example">
+                                <option value="2023">All Employees</option>
+                                <option value="2024">IT Department</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label>Date</label>
+                            <input type="date" class="form-control form-control-sm ">
+                        </div>
+                          <div class=" col-md-4">
+                           <a href="#" style="width: 150px; position: relative; top: 24px;" class="btn btn-sm btn-success">Get Employee List</a>
                           </div>
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-sm" style="background: var(--skin-color); color: #fff">Add</button>
-                    </div>
+                      </div>
+                    </form>
                 </div>
+
+                <div class="event-table small-table mt-3">
+                    <div class="color-top" style="left: -22px;"></div>
+                
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Employee Name</th>
+                                <th>Attendance Type</th>
+                                <th>Attendance By</th>
+                                <th>Date</th>
+                                <th>In Time</th>
+                                <th>Out Time</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ssewankambo Derick</td>
+                                <td>Manual</td>
+                                <td>Administrator</td>
+                                <td>12/06/2023</td>
+                                <td>
+                                      <div class="col-md-10">
+                                    <input type="time" class="form-control form-control-sm">
+                                  </div></td>
+                                <td>
+                                    <div class="col-md-10">
+                                        <input type="time" class="form-control form-control-sm" >
+                                      </div>
+                                </td>
+                                <td>
+                                    <div class="col-md-12">
+                                        <select id="inputState" class="form-select form-select-sm">
+                                          <option>Absent</option>
+                                          <option>Present</option>
+                                          <option>Leave</option>
+                                        </select>
+                                      </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-sm mt-2" style="background: var(--skin-color); color: #fff">Save</button>
                 </div>
+
             </div>
+        </main>
+        <!-- html for main part ends here -->
         
     </section>
     <!--Html for the footer-->
